@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — GorilaFit</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.6;color:#111;background:#fff;padding:28px;max-width:900px;margin:0 auto}
+    h1,h2,h3{color:#0b3a66}
+    h1{font-size:28px;margin-bottom:4px}
+    p{margin:10px 0}
+    .muted{color:#555;font-size:14px}
+    .note{background:#f7f9fc;border-left:4px solid #cfe3f6;padding:10px;margin:14px 0}
+    table{width:100%;border-collapse:collapse;margin:10px 0}
+    th,td{border:1px solid #e6e9ef;padding:8px;text-align:left}
+    footer{margin-top:28px;color:#666;font-size:13px}
+    a{color:#0b66b2}
+    .small{font-size:13px;color:#666}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="muted"><strong>Last updated:</strong> October 24, 2025</p>
+  </header>
+
+  <section class="note">
+    <strong>Quick note:</strong> you operate as an individual data controller (not a company). The data controller details are shown below.
+    <ul>
+      <li><strong>Data Controller:</strong> <em>Grigore Victor Stefan</em></li>
+      <li><strong>Postal address:</strong> <em>Romania, Arges, Pitesti, Str. Gheorghe Sincai Bloc p21 sc b ap 11</em></li>
+    </ul>
+    Contact email used in this policy: <a href="mailto:support@gorilafit.info">support@gorilafit.info</a>
+  </section>
+
+  <h2>1. Introduction</h2>
+  <p>
+    This Privacy Policy explains how <strong>GorilaFit</strong> (referred to here as "we", "us" or "our") — operated by an individual data controller — collects, uses, discloses, protects, and stores personal data when you use our app, website and services (the "Services"). It also explains your rights and how to contact us.
+  </p>
+
+  <h2>2. Data controller & contact</h2>
+  <p><strong>Data controller:</strong> Grigore Victor Stefan (individual operator).<br>
+  <strong>Contact email:</strong> <a href="mailto:support@gorilafit.info">support@gorilafit.info</a></p>
+  <p><strong>Postal address:</strong> Romania, Arges, Pitesti, Str. Gheorghe Sincai Bloc p21 sc b ap 11</p>
+  <p><strong>DPO:</strong> No Data Protection Officer has been appointed. Contact the email above for privacy requests.</p>
+
+  <h2>3. Summary — in one minute</h2>
+  <p class="small">We hold account and authentication data on a remote database (Firestore). <strong>All health and fitness data are stored only locally on the user's device (SQLite) and are not uploaded to Firestore or any remote servers by default.</strong> Users may export their app data as a CSV file from inside the app. Local health data are removed automatically when the app is uninstalled or when the app's cache/data is cleared.</p>
+
+  <h2>4. What personal data we collect</h2>
+  <p>We collect categories of personal data necessary to provide and improve the Services. These include:</p>
+  <ul>
+    <li><strong>Identifiers & contact (stored on Firestore):</strong> email, username. If you sign-in via Google or Apple, we store provider identifiers necessary to manage the account. We also store basic account attributes such as credit/account type (e.g., "free", "premium").</li>
+    <li><strong>Authentication data (stored on Firestore):</strong> authentication-related records needed to let you sign in (for example email/password auth metadata or provider tokens/identifiers). Note: exact token formats and how passwords are handled depend on your chosen authentication implementation; contact support for details.</li>
+    <li><strong>Payment & billing (where applicable):</strong> records related to purchases or subscriptions; payment processing is handled by platform billing providers (Google Play Billing, Apple In-App Purchase). We do not store full card numbers on our servers.</li>
+    <li><strong>Device & technical data:</strong> device identifiers, OS/version, crash logs, performance metrics.</li>
+    <li><strong>Usage & analytics:</strong> app usage events and aggregated analytics identifiers (only where enabled/consented).</li>
+    <li><strong>Health & fitness data — STORED LOCALLY ONLY (SQLite):</strong> the specific health-related data we collect and store locally on your device includes:
+      <ul>
+        <li>Food and drink you consume and calorie counts</li>
+        <li>Fitness level, activity and goals (e.g., weekly goals or habits like “eat more protein”)</li>
+        <li>Body measurements (height, weight, BMI)</li>
+        <li>Progress photos you choose to provide</li>
+        <li>Workout history, heart rate or other biometric metrics you voluntarily provide</li>
+      </ul>
+      <p class="small"><em>Important:</em> the health & fitness data above remain on your device in a local SQLite database by default and are not uploaded to Firestore or other remote servers unless you explicitly use an app feature that sends them (for example, a manual export or an opt-in backup).</p>
+    </li>
+  </ul>
+
+  <h2>5. Local storage, Firestore and what is sent to the cloud</h2>
+  <p><strong>Local storage (SQLite):</strong> health & fitness data (listed above) are stored in a local SQLite database inside the app on your device. These data are not transmitted to our remote database or to third parties by default.</p>
+
+  <p><strong>Firestore (remote):</strong> We use a remote database (Google Cloud Firestore) to store account-level data required for account management and cross-device sign-in. Only the following categories are stored on Firestore by default:</p>
+  <ul>
+    <li>Email and username</li>
+    <li>Authentication related records (provider identifiers for Google Sign-In or Apple Sign-In; and metadata for email/password sign-in)</li>
+    <li>Account metadata such as account/credit type (e.g., free, premium)</li>
+    <li>Minimal flags or pointers to manage sync/status (but not health details)</li>
+  </ul>
+  <p>All other health & fitness data remain local unless you explicitly export or opt-in to a backup feature.</p>
+
+  <h2>6. Local data deletion & uninstall behavior</h2>
+  <p>Local health & fitness data stored in SQLite are deleted automatically when either:</p>
+  <ol>
+    <li>You uninstall the app from your device (the operating system removes app data); or</li>
+    <li>You clear the app's data/cache via your device settings (this removes the local SQLite database and associated local files).</li>
+  </ol>
+  <p>If you delete your account via the app, we will remove your Firestore account records (email, username, account metadata) according to our deletion policy. Because health data are local, account deletion does not by itself remove health data stored locally unless the app triggers local deletion on your device as part of the account deletion flow — check the in-app settings or contact support to request device-side deletion instructions.</p>
+
+  <h2>7. Exporting your data (CSV)</h2>
+  <p>The app provides an export feature that allows you to create a CSV file containing your data from the app (including health & fitness entries you have stored locally). When you create/export a CSV:</p>
+  <ul>
+    <li>The CSV file is generated on your device and saved according to your device's file-handling (for example, Downloads folder). We do not automatically upload that CSV to our servers.</li>
+    <li>Once exported, the CSV file is under your control — we recommend you store it securely because anyone with access to that file can read the exported data.</li>
+    <li>If you choose to share or upload the CSV to cloud storage or email it, those actions are outside our control and subject to those third-party services' privacy practices.</li>
+  </ul>
+
+  <h2>8. Backups & device sync</h2>
+  <p>Local SQLite data may be included in your device's automatic backups (for example, Google Drive backups on Android or iCloud backups on iOS) if you have backups enabled. If you do not want your app data included in device backups, disable the device backup feature or follow device-specific instructions. We do not control the contents of device backups and recommend you review your device backup settings.</p>
+
+  <h2>9. Legal bases for processing (GDPR)</h2>
+  <p>Where GDPR applies, we rely on the following legal bases:</p>
+  <ul>
+    <li><strong>Performance of a contract:</strong> to provide Services you request (account management, subscriptions).</li>
+    <li><strong>Consent:</strong> for any processing of sensitive health & fitness data that would go beyond local storage (for example, an explicit backup/upload feature or marketing communications).</li>
+    <li><strong>Legal obligation:</strong> to comply with tax, accounting or other legal requirements.</li>
+    <li><strong>Legitimate interests:</strong> for fraud prevention, security, and limited analytics where balanced and documented.</li>
+  </ul>
+
+  <h2>10. How we use your data (purposes)</h2>
+  <ul>
+    <li>Provide and operate the Services, user accounts and subscriptions (Firestore: email, username, account metadata).</li>
+    <li>Personalize training plans and recommendations using health data stored locally on your device (processing occurs on-device unless you explicitly opt to send data off-device).</li>
+    <li>Process purchases via platform billing and manage subscription status (platform billing providers handle payment data).</li>
+    <li>Allow you to export your data as a CSV file from the app.</li>
+    <li>Improve the app using aggregated analytics and crash reports (where consented or where lawful).</li>
+  </ul>
+
+  <h2>11. Third parties & processors</h2>
+  <p>We only send limited account/authentication data to Firestore (Google Cloud Firestore) to support account sign-in and account metadata. Other third-party processors we may use include platform billing providers (Google Play Billing, Apple In-App Purchase), analytics and crash reporting services (only with consent where required), push notification services, and hosting providers for the minimal remote data we keep. We keep a record of processors and will provide details on request (contact <a href="mailto:support@gorilafit.info">support@gorilafit.info</a>).</p>
+
+  <h2>12. International transfers</h2>
+  <p>Firestore and other processors may process data in countries outside the EEA. Where data is transferred outside the EEA we rely on appropriate safeguards such as Standard Contractual Clauses (SCCs) or adequacy decisions. Contact us for details about the countries and safeguards used for your data.</p>
+
+  <h2>13. Data retention</h2>
+  <p>We retain remote account data only as long as necessary to provide the Services or to satisfy legal obligations. Typical retention periods (defaults):</p>
+  <table>
+    <thead>
+      <tr><th>Data category</th><th>Retention period (default)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Account data (Firestore: email, username, account metadata)</td><td>Duration of account + 30 days after deletion (remote records)</td></tr>
+      <tr><td>Health & fitness data (local SQLite)</td><td>Stored locally until you delete them, until you clear app data/cache, or until you uninstall the app (these actions remove local SQLite data)</td></tr>
+      <tr><td>Transaction & billing records</td><td>7 years (for tax and accounting) — stored with platform/billing providers as applicable</td></tr>
+      <tr><td>Analytics (aggregated)</td><td>24 months (where applicable and consented)</td></tr>
+      <tr><td>Crash logs & server logs</td><td>12 months</td></tr>
+    </tbody>
+  </table>
+  <p>If you request deletion of your account we will remove or anonymize the remote personal data we control. For local health data deletion on device, follow the in-app deletion flow or clear app data; contact support for device-side deletion assistance.</p>
+
+  <h2>14. Cookies & tracking</h2>
+  <p>We use cookies and similar technologies for essential functionality, analytics, and—if you consent—marketing. A cookie banner (or platform consent mechanism) will allow you to accept or reject non-essential cookies.</p>
+
+  <h2>15. Your rights (EEA residents)</h2>
+  <p>If you are in the EEA you have rights including: access, rectification, erasure, restriction, portability, objection and withdrawal of consent. To exercise your rights, contact <a href="mailto:support@gorilafit.info">support@gorilafit.info</a>. We may need to verify your identity and will respond within applicable legal timeframes.</p>
+
+  <h2>16. California residents (CCPA / CPRA)</h2>
+  <p>If you are a California resident, you may have additional rights. To submit a California privacy request email <a href="mailto:support@gorilafit.info">support@gorilafit.info</a> with the subject line "California Privacy Request". We will follow applicable verification procedures and respond within the legal timeframe.</p>
+
+  <h2>17. Minors</h2>
+  <p>The Services are not intended for children under <strong>16 years</strong> of age. We do not knowingly collect personal data from children under the minimum age applicable in your jurisdiction. If you believe we have collected information from a minor, contact us at <a href="mailto:support@gorilafit.info">support@gorilafit.info</a> and we will take steps to remove it.</p>
+
+  <h2>18. Security</h2>
+  <p>We implement reasonable technical and organizational measures to protect personal data (for example TLS in transit and access controls for remote stores). Local data on your device is protected by device security measures (device lock, encryption if enabled by the OS). No system is perfectly secure; if a data breach affecting your personal data occurs we will comply with legal notification requirements and inform affected users and relevant authorities as required.</p>
+
+  <h2>19. Automated decision-making & profiling</h2>
+  <p>We do not perform automated decision-making that produces legal effects concerning you. Personalization and recommendations based on your health & fitness data are performed on-device using data stored locally, unless you explicitly opt to upload or back up that data.</p>
+
+  <h2>20. Changes to this policy</h2>
+  <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top will indicate when material changes are published. For material changes we will also post a notice within the Services or send you direct notice where appropriate.</p>
+
+  <h2>21. How to contact us</h2>
+  <p>If you have questions, need to exercise your rights, or want further details about processing, contact us:</p>
+  <p>
+    <strong>Email:</strong> <a href="mailto:support@gorilafit.info">support@gorilafit.info</a><br>
+    <strong>Postal address:</strong> Romania, Arges, Pitesti, Str. Gheorghe Sincai Bloc p21 sc b ap 11
+  </p>
+  <p>If you are located in the EEA and believe your rights have been violated you may also lodge a complaint with your local supervisory authority.</p>
+
+  <h2>22. Appendix — third-party privacy resources</h2>
+  <ul>
+    <li>Google Cloud Firestore / Firebase — used for remote account storage and authentication metadata.</li>
+    <li>Google Play Billing & Apple In-App Purchase — used for payments and subscriptions.</li>
+    <li>Ad networks and analytics providers — used only with consent where applicable.</li>
+  </ul>
+
+  <footer>
+    <p class="small">This Privacy Policy was prepared for an individual operator: Grigore Victor Stefan. Please review local legal requirements applicable to your country and consider consulting a qualified privacy lawyer if you process health or biometric data at scale.</p>
+    <p class="small">© Grigore Victor Stefan — Last updated October 24, 2025</p>
+  </footer>
+</body>
+</html>
